@@ -1,0 +1,29 @@
+{
+	"title": "Bitrix24: Книга разработчика",
+	"tagline": "Любительское руководство",
+	"author": "Andrei Nikolaev",
+	"language": "ru",
+	"image": "inbox.png",
+	"live": {
+        "clean_urls": true
+    },
+	"strings": {
+		"ru": {
+			"CodeBlocks_show": "Показывать код",
+			"Search_placeholder": "Искать...",
+			"Link_previous": "Назад",
+			"Link_next": "Вперед",
+			"Edit_on": "Редактор :name:",
+			"View_on_github": "Посмотреть на GitHub",
+			"View_documentation": "Читать"
+		}
+	},
+	"html": {
+		"breadcrumbs": true,
+		"breadcrumb_separator" : " > ",
+		"links": {
+			"Чат в telegram": "https://t.me/bit24dev"
+		},
+		"theme": "daux-navy"
+	}
+}
