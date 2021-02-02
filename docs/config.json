@@ -24,6 +24,7 @@
 		"links": {
 			"Чат в telegram": "https://t.me/bit24dev"
 		},
-		"theme": "daux-navy"
+		"theme": "daux-navy",
+		"edit_on_github": "gromdron/bx24devbook/blob/main/docs"
 	}
 }
