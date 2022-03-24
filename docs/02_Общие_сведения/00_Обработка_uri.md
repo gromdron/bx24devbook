@@ -75,7 +75,7 @@ $arUrlRewrite = [
 
 Параметр `RULE` является необязательным для описания маршрута, однако именно он открывает много возможностей для управления ЧПУ.
 
-Именно на формируется его основе формируется реальный используемый URL путем выполнения [preg_replace](https://www.php.net/manual/ru/function.preg-replace.php) функции с аргументами `CONDITION`, `PATH`.`RULE` на `REQUEST_URL`. 
+Именно на его основе формируется реальный используемый URL путем выполнения [preg_replace](https://www.php.net/manual/ru/function.preg-replace.php) функции с аргументами `CONDITION`, `PATH`.`RULE` на `REQUEST_URL`. 
 
 Таким образом битрикс обработает наш запрос как если бы он сразу поступил на адрес `/pub/form.php?form_code=some_test&sec=somesec`. 
 
