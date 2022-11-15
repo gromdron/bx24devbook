@@ -20,7 +20,7 @@ jobs:
     - name: Install dependencies
       uses: php-actions/composer@v6
       with:
-        command: global require daux/daux.io --prefer-dist --no-progress --no-suggest
+        command: composer global require daux/daux.io --prefer-dist --no-progress --no-suggest
 
     - name: Require Daux
       run: global require daux/daux.io
