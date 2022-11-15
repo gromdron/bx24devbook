@@ -10,19 +10,23 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - uses: php-actions/composer@v6
 
     - name: Set up PHP
-      uses: shivammathur/setup-php@v2
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.0
+          extensions: mbstring, dom, intl, iconv
+    
+    - name: Install dependencies
+      uses: php-actions/composer@v6
       with:
-        php-version: 8.0
-        extensions: mbstring, dom, intl, iconv
+        command: global require daux/daux.io --prefer-dist --no-progress --no-suggest
 
     - name: Require Daux
-      run: composer global require daux/daux.io
+      run: global require daux/daux.io
 
     - name: Generate documentation
-      run: ~/.config/composer/vendor/bin/daux generate
+      run: ~/.composer/vendor/bin/daux generate
 
     - name: Deploy  🚀
       uses: Rebel028/s3-upload-github-action@master
