@@ -1,0 +1,35 @@
+name: Re-generate website
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: php-actions/composer@v6
+
+    - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.0
+          extensions: mbstring, dom, intl, iconv
+
+    - name: Require Daux
+      run: composer global require daux/daux.io
+
+    - name: Generate documentation
+      run: bin/daux generate
+
+    - name: Deploy  🚀
+      uses: Rebel028/s3-upload-github-action@master
+      id: S3
+      env:
+        FILE: ./static/
+        S3_ENDPOINT: ${{ secrets.YCS_ENDPOINT }}
+        S3_BUCKET: ${{ secrets.YCS_BUCKET_ID }}
+        S3_ACCESS_KEY_ID: ${{ secrets.YCS_CLIENT_ID }}
+        S3_SECRET_ACCESS_KEY: ${{ secrets.YCS_CLIENT_SECRET }}
