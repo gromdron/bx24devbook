@@ -13,10 +13,10 @@ jobs:
     - uses: php-actions/composer@v6
 
     - name: Set up PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: 8.0
-          extensions: mbstring, dom, intl, iconv
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: 8.0
+        extensions: mbstring, dom, intl, iconv
 
     - name: Require Daux
       run: composer global require daux/daux.io
