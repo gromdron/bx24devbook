@@ -1,0 +1,8 @@
+{
+    "name": "gromdron/bx24devbook",
+    "description": "Bitrxi24 Developer Book",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {}
+}
