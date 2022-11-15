@@ -22,7 +22,7 @@ jobs:
       run: composer global require daux/daux.io
 
     - name: Generate documentation
-      run: bin/daux generate
+      run: ~/.config/composer/vendor/bin/daux generate
 
     - name: Deploy  🚀
       uses: Rebel028/s3-upload-github-action@master
