@@ -4,5 +4,8 @@
     "type": "project",
     "license": "MIT",
     "minimum-stability": "dev",
-    "require": {}
+    "bin": ["bin/daux"],
+    "require": {
+        "daux/daux.io": "0.21"
+    }
 }
