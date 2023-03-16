@@ -2,8 +2,11 @@ name: Documentation
 
 on:
   push:
-    branches: [ master ]
-
+    branches: [ main ]
+  pull_request:
+    types:
+      - closed
+      
 jobs:
   documentation:
     runs-on: ubuntu-latest
