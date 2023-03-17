@@ -1,0 +1,26 @@
+@media (max-width: 520px) {
+    .Container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Search {
+        margin: 5px 8px 5px 5px;
+    }
+
+    .TableOfContentsContainer {
+        float: none;
+        margin: 15px 0;
+        padding-left: unset;
+        max-width: 100%;
+    }
+
+    .Columns {
+        background-color: var(--body-background);
+    }
+
+    .s-content pre {
+        box-sizing: border-box;
+        width: calc(100% + 20px);
+    }
+}
