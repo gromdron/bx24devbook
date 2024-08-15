@@ -16,7 +16,7 @@ jobs:
       env:
         runner: self-hosted
       with:
-        php-version: '8.1'
+        php-version: '8.2'
         extensions: mbstring, dom, intl, iconv
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress --no-suggest
