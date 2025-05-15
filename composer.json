@@ -6,6 +6,6 @@
     "minimum-stability": "dev",
     "bin": ["bin/daux"],
     "require": {
-        "daux/daux.io": "0.21"
+        "daux/daux.io": "^0.22"
     }
 }
