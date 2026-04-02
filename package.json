@@ -8,12 +8,12 @@
     "@swissquote/crafty-preset-postcss": "1.21.1",
     "@swissquote/crafty-runner-gulp": "1.21.1",
     "@swissquote/crafty-runner-rollup": "1.21.1",
-    "flexsearch": "^0.7.0",
-    "katex": "^0.16.4",
-    "mermaid": "^9.2.2",
+    "flexsearch": "^0.7.43",
+    "katex": "^0.16.44",
+    "mermaid": "^9.4.3",
     "postcss-page-break": "^2.0.0",
-    "preact": "^10.0.5",
-    "testcafe": "^2.0.0"
+    "preact": "^10.29.0",
+    "testcafe": "^2.6.2"
   },
   "scripts": {
     "build": "crafty run",
